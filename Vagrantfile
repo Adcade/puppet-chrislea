@@ -2,7 +2,7 @@
 # vi: set ft=ruby :
 
 Vagrant::Config.run do |config|
-  config.vm.box = "lucid32"
+  config.vm.box = "precise64"
   config.vm.share_folder "chris", "/tmp/vagrant-puppet/modules/chris", ".", :create => true
   config.vm.provision :puppet do |puppet|
     puppet.manifests_path = "tests"
